@@ -29,3 +29,9 @@ nx generate @nx/angular:library common-services --prefix=app --style=scss
 nx generate @nx/angular:library common-components --prefix=app --style=scss
 nx generate component button --project=common-components
 ```
+
+## 🚀 Run the App
+
+```bash
+nx serve shell
+```

@@ -21,5 +21,11 @@ This project is a scalable Nx monorepo setup using Angular, designed for enterpr
 ## 🧱 Setup Instructions
 
 ```bash
-npx create
+npx create-nx-workspace@latest nx-monorepo-angular --preset=apps
+nx generate @nx/angular:application shell --routing --style=scss
+nx generate @nx/angular:application request --routing --style=scss
+nx generate @nx/angular:application workorder --routing --style=scss
+nx generate @nx/angular:library common-services --prefix=app --style=scss
+nx generate @nx/angular:library common-components --prefix=app --style=scss
+nx generate component button --project=common-components
 ```
